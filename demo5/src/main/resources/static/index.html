@@ -1,0 +1,711 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+          content="candidates, career, employment, freelance, glassdoor, Human Resource Management, indeed, job board, job listing, job portal, job postings, jobs, listings, recruitment, resume">
+    <meta name="CreativeLayers" content="ATFN">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Title -->
+    <title>招聘网站</title>
+    <!-- Favicon -->
+    <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon"/>
+    <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .sign_up_btn .btn{
+            color: #515252;
+        }
+        .nameback{
+            display: none;
+            margin-top: 24px;
+        }
+        .nameback{
+            border: none;
+            background: transparent;
+            color: #0a0a0a;
+        }
+        .nameback .dropdown-toggle{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="preloader"></div>
+
+    <!-- Main Header Nav -->
+    <header class="header-nav menu_style_home_two navbar-scrolltofixed stricky main-menu">
+        <div class="container">
+            <!-- Ace Responsive Menu -->
+            <nav>
+                <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <img class="nav_logo_img img-fluid" src="images/header-logo2.png" alt="header-logo2.png">
+                    <button type="button" id="menu-btn">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a href="index.html" class="navbar_brand float-left dn-smd">
+                    <img class="img-fluid" src="images/header-logo2.png" alt="header-logo2.png">
+                </a>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a href="index.html"><span class="title">首页</span></a>
+                    </li>
+                    <li>
+                        <a href="jobRecruitment.html"><span class="title">招聘</span></a>
+                    </li>
+                    <!--<li>
+                        <a href="#"><span class="title">个人中心</span></a>
+                        &lt;!&ndash; Level Two&ndash;&gt;
+                        <ul>
+                            <li>
+                                <a href="#">修改密码</a>
+                            </li>
+                            <li>
+                                <a href="#">个人信息</a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <li id = "admin" style="display: none">
+                        <a href="dataGet.html"><span class="title">后台管理</span></a>
+                        <ul>
+                            <li>
+                                <a href="dataGet.html">数据获取</a>
+                            </li>
+                            <li>
+                                <a href="dataCut.html">数据分词</a>
+                            </li>
+                            <li>
+                                <a href="dataPick.html">特征提取</a>
+                            </li>
+                            <!--<li>
+                                <a href="dataDo.html">算法分析</a>
+                            </li>-->
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sign_up_btn pull-right dn-smd">
+                    <li><a href="#" class="btn btn-md" data-toggle="modal"
+                           data-target="#exampleModalCenter">登<span class="dn-md">录</span>/注<span class="dn-md">册</span></a>
+                    </li>
+                </ul>
+                <!--用户名回显-->
+                <ul class="dropdown pull-right dn-smd nameback">
+                    <li>
+                        <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item loginout" style="cursor: pointer">退出登录</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+            </nav>
+            <!-- End of Responsive Menu -->
+        </div>
+    </header>
+    <!-- Modal -->
+    <div class="sign_up_modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <ul class="sign_up_tab nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                           aria-controls="home" aria-selected="true">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                           aria-controls="profile" aria-selected="false">注册</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="login_form">
+                            <form action="#" name="LoginForm" id = "LoginForm">
+                                <div class="heading">
+                                    <h3 class="text-center">登录</h3>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="username" id="username"
+                                           placeholder="请输入用户名">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="exampleInputPassword1"
+                                           placeholder="请输入密码">
+                                    <span id="errorLogin" style="color: red"></span>
+                                </div>
+                                <button type="submit" class="btn btn-log btn-block btn-thm"  id="login">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="sign_up_form" style="height: 450px">
+                            <div class="heading">
+                                <h3 class="text-center">创建一个账号</h3>
+                            </div>
+                            <form action="#" name="RegisterForm" id="RegisterForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="reusername" id="reusername"
+                                           placeholder="请输入您的用户名">
+                                    <span id="errorName" style="color: red"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" id="password"
+                                           placeholder="请输入密码">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="repassword" id="repassword"
+                                           placeholder="请再次输入密码">
+                                    <span id="errorPwd" style="color: red"></span>
+                                </div>
+                                <button type="submit" class="btn btn-log btn-block btn-dark" id="register">注册</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header Nav For Mobile -->
+    <div id="page" class="stylehome1 h0">
+        <div class="mobile-menu">
+            <div class="header stylehome1">
+                <img class="nav_logo_img img-fluid float-left mt25" src="images/header-logo.png" alt="header-logo.png">
+                <a class="bg-thm" href="#menu"><span></span></a>
+            </div>
+        </div><!-- /.mobile-menu -->
+        <nav id="menu" class="stylehome1">
+            <ul>
+                <li>
+                    <a href="#"><span class="title">首页</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="title">招聘</span></a>
+                </li>
+               <!-- <li>
+                    <a href="#"><span class="title">个人中心</span></a>
+                    &lt;!&ndash; Level Two&ndash;&gt;
+                    <ul>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">个人信息</a>
+                        </li>
+                    </ul>
+                </li>-->
+                <li>
+                    <a href="dataget.html"><span class="title">后台管理</span></a>
+                    <ul>
+                        <li>
+                            <a href="dataget.html">数据获取</a>
+                        </li>
+                        <li>
+                            <a href="datacut.html">数据分词</a>
+                        </li>
+                        <li>
+                            <a href="datapick.html">特征提取</a>
+                        </li>
+                        <li>
+                            <a href="datado.html">算法分析</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a data-toggle="modal" style="cursor: pointer"
+                       data-target="#exampleModalCenter">登录/注册</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Home Design -->
+    <section class="home-one style2 bgc-white">
+        <div class="container">
+            <div class="row home-content">
+                <div class="col-lg-12">
+                    <div class="find-cand-sec">
+                        <div class="mockup-top"><img class="animute" src="images/home/home2_bg.png" alt=""/></div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="home-text">
+                        <h2 class="fz40">找到最适合自己的工作岗位</h2>
+                        <p>基于大数据分析，精确匹配</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="home-job-search-box mt20 mb20">
+                        <form class="form-inline">
+                            <!--<div class="search_option_one">
+                                <div class="form-group">
+                                    <label for="exampleInputName"><span class="flaticon-search"></span></label>
+                                    <input type="text" class="form-control h70" id="exampleInputName" placeholder="请输入你感兴趣的工作岗位">
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn btn-thm btn-secondary h70">搜索</button>
+                            </div>-->
+                            <a type="submit" class="btn btn-thm btn-secondary h70"
+                               style="width: 300px;line-height: 60px;font-size: 25px"
+                               href="jobRecruitment.html">获取职位</a>
+                        </form>
+                    </div>
+                    <!--<p><span class="color-black22">关键词：</span>web前端工程师，python工程师，java工程师</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Job Categories -->
+    <section class="popular-job bgc-fa">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ulockd-main-title">
+                        <h3 class="mt0">热门职位类别</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <a href="#" class="icon_hvr_img_box style2 sbbg1">
+                        <div class="overlay">
+                            <div class="icon"><span class="flaticon-pen"></span></div>
+                            <div class="details">
+                                <h5>web前端开发</h5>
+                                <p>22个职位提供</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="#" class="icon_hvr_img_box style2 sbbg2">
+                        <div class="overlay">
+                            <div class="icon"><span class="flaticon-mortarboard"></span></div>
+                            <div class="details">
+                                <h5>web前端开发</h5>
+                                <p>22个职位提供</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="#" class="icon_hvr_img_box style2 sbbg3">
+                        <div class="overlay">
+                            <div class="icon"><span class="flaticon-bars"></span></div>
+                            <div class="details">
+                                <h5>web前端开发</h5>
+                                <p>22个职位提供</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="#" class="icon_hvr_img_box style2 sbbg4">
+                        <div class="overlay">
+                            <div class="icon"><span class="flaticon-interview"></span></div>
+                            <div class="details">
+                                <h5>web前端开发</h5>
+                                <p>22个职位提供</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="pjc_all_btn text-center">
+                        <a class="btn btn-thm" href="#">查看更多<span class="flaticon-right-arrow pl10"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It's Work -->
+    <section class="popular-job">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="ulockd-main-title">
+                        <h3 class="mt0">如何使用本系统</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 prpl5">
+                    <div class="icon_box_hiw">
+                        <div class="icon">
+                            <div class="list_tag float-right"><p>1</p></div>
+                            <span class="flaticon-unlocked"></span></div>
+                        <div class="details">
+                            <h4>账号</h4>
+                            <p>创建一个属于你的账号</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 prpl5 mt20-xxsd">
+                    <div class="icon_box_hiw">
+                        <div class="icon middle">
+                            <div class="list_tag float-right"><p>2</p></div>
+                            <span class="flaticon-job"></span></div>
+                        <div class="details">
+                            <h4>招聘</h4>
+                            <p>请输入你对技能的熟练程度，后台将经过计算得到相应的职位</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 prpl5 mt20-xxsd">
+                    <div class="icon_box_hiw">
+                        <div class="icon">
+                            <div class="list_tag float-right"><p>3</p></div>
+                            <span class="flaticon-trophy"></span></div>
+                        <div class="details">
+                            <h4>反馈</h4>
+                            <p>为您推荐最适合的岗位</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Job List Design -->
+    <section class="popular-job bgc-fa pb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ulockd-main-title">
+                        <h3 class="mt0">热门岗位名称</h3>
+                        <a class="text-thm float-right" href="#">查看更多<i class="flaticon-right-arrow pl15"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <div class="fj_post">
+                        <div class="details">
+                            <h5 class="job_chedule text-thm mt0">Full Time</h5>
+                            <div class="thumb fn-smd">
+                                <img class="img-fluid" src="images/partners/1.jpg" alt="1.jpg">
+                            </div>
+                            <h4>JEB Product Sales Specialist, Russia & CIS</h4>
+                            <p>Posted 23 August by <a class="text-thm" href="#">Wiggle CRC</a></p>
+                            <ul class="featurej_post">
+                                <li class="list-inline-item"><span class="flaticon-location-pin"></span> <a href="#">Bothell,
+                                    WA, USA</a></li>
+                                <li class="list-inline-item"><span class="flaticon-price pl20"></span> <a href="#">$13.00
+                                    - $18.00 per hour</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-md btn-transparent float-right fn-smd" href="#">Browse Job</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="fj_post">
+                        <div class="details">
+                            <h5 class="job_chedule text-thm mt0">Part Time</h5>
+                            <div class="thumb fn-smd">
+                                <img class="img-fluid" src="images/partners/2.jpg" alt="2.jpg">
+                            </div>
+                            <h4>General Ledger Accountant</h4>
+                            <p>Posted 23 August by <a class="text-thm" href="#">Robert Half Finance & Accounting</a></p>
+                            <ul class="featurej_post">
+                                <li class="list-inline-item"><span class="flaticon-location-pin"></span> <a href="#">RG40,
+                                    Wokingham</a></li>
+                                <li class="list-inline-item"><span class="flaticon-price pl20"></span> <a href="#">$13.00
+                                    - $18.00 per hour</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-md btn-transparent float-right fn-smd" href="#">Browse Job</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="fj_post">
+                        <div class="details">
+                            <h5 class="job_chedule text-thm mt0">Full Time</h5>
+                            <div class="thumb fn-smd">
+                                <img class="img-fluid" src="images/partners/3.jpg" alt="3.jpg">
+                            </div>
+                            <h4>Junior Digital Graphic Designer</h4>
+                            <p>Posted 23 August by <a class="text-thm" href="#">Parkside Recruitment - Uxbridge
+                                Finance</a></p>
+                            <ul class="featurej_post">
+                                <li class="list-inline-item"><span class="flaticon-location-pin"></span> <a href="#">New
+                                    Denham, UB8 1JG</a></li>
+                                <li class="list-inline-item"><span class="flaticon-price pl20"></span> <a href="#">$13.00
+                                    - $18.00 per hour</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-md btn-transparent float-right fn-smd" href="#">Browse Job</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="fj_post">
+                        <div class="details">
+                            <h5 class="job_chedule text-thm mt0">Full Time</h5>
+                            <div class="thumb fn-smd">
+                                <img class="img-fluid" src="images/partners/4.jpg" alt="4.jpg">
+                            </div>
+                            <h4>UX/UI Designer</h4>
+                            <p>Yesterday <a class="text-thm" href="#">NonStop Recruitment Ltd</a></p>
+                            <ul class="featurej_post">
+                                <li class="list-inline-item"><span class="flaticon-location-pin"></span> <a href="#">Bothell,
+                                    WA, USA</a></li>
+                                <li class="list-inline-item"><span class="flaticon-price pl20"></span> <a href="#">$13.00
+                                    - $18.00 per hour</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-md btn-transparent float-right fn-smd" href="#">Browse Job</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Local Jobs -->
+    <section class="job-location pb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ulockd-main-title">
+                        <h3 class="mt0">热门岗位地区</h3>
+                        <a class="text-thm float-right" href="#">查看更多<i class="flaticon-right-arrow pl15"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/9.jpg" alt="9.jpg"></div>
+                        <div class="details">
+                            <h4>北京</h4>
+                            <h5>152,141</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/10.jpg" alt="10.jpg"></div>
+                        <div class="details">
+                            <h4>上海</h4>
+                            <h5>586,478</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/11.jpg" alt="11.jpg"></div>
+                        <div class="details">
+                            <h4>成都</h4>
+                            <h5>15,258</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/12.jpg" alt="12.jpg"></div>
+                        <div class="details">
+                            <h4>重庆</h4>
+                            <h5>152,141</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/13.jpg" alt="13.jpg"></div>
+                        <div class="details">
+                            <h4>深圳</h4>
+                            <h5>586,478</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="job_loc_img_box">
+                        <div class="thumb"><img class="img-fluid" src="images/service/14.jpg" alt="14.jpg"></div>
+                        <div class="details">
+                            <h4>浙江</h4>
+                            <h5>15,258</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Footer Bottom Area -->
+    <section class="footer_bottom_area p0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 pb10 pt10">
+                    <div class="copyright-widget tac-smd mt20">
+                        <p><a href="#">首页</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="scrollToHome text-thm" href="#"><i class="flaticon-rocket-launch"></i></a>
+</div>
+<!-- Wrapper End -->
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+<script type="text/javascript" src="js/ace-responsive-menu.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/snackbar.min.js"></script>
+<script type="text/javascript" src="js/simplebar.js"></script>
+<script type="text/javascript" src="js/parallax-new.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/scrollto.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/progressbar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/timepicker.js"></script>
+<!-- Custom script for all pages -->
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+    $(function () {
+        let username = window.localStorage.getItem("username");
+        if (username !== null){
+            $(".sign_up_btn").css("display","none");
+            $(".nameback").css("display","block");
+            $(".sign_up_modal").css("display","none");
+            $("#dropdownMenuButton").html(username);
+        }
+        if (username == "Admin"){
+            $("#admin").css("display","block")
+        }
+        // 登录
+        $("#login").click(function () {
+            // 发送登录的请求，返回token,解析出用户名存入localStorage中
+            var result=""
+           $.ajax({
+                url:"career/user/login",
+                data:$("#LoginForm").serialize(),
+                type:"post",
+                dataType:"text",
+                success:function (data) {
+                    if(data != null) {
+                        result = data
+                        window.localStorage.setItem("username", result);
+                        $(".sign_up_btn").css("display", "none");
+                        $(".nameback").css("display", "block");
+                        $(".sign_up_modal").css("display", "none");
+                        let username = window.localStorage.getItem("username");
+                        // 回显用户名
+                        $("#dropdownMenuButton").html(username);
+                        $('#errorLogin').empty()
+                    }else{
+                        $('#errorLogin').text("账号或者用户名不对");
+                        $(".sign_up_btn").css("display","block");
+                        $(".nameback").css("display","none");
+                        $(".sign_up_modal").css("display","none");
+                    }
+                }
+            })
+            //
+            // $(".sign_up_btn").css("display","none");
+            // $(".nameback").css("display","block");
+            // $(".sign_up_modal").css("display","none");
+            // // 这里的username是登录成功后返回的，这里举例为张三
+            // let username = window.localStorage.getItem("username");
+            // // 回显用户名
+            // $("#dropdownMenuButton").html(username);
+        });
+        // 登录退出
+        $(".loginout").click(function () {
+            localStorage.removeItem("username");
+            $(".sign_up_btn").css("display","block");
+            $(".nameback").css("display","none");
+        })
+        //注册
+        $("#register").click(function (){
+            $.ajax({
+                url:"career/user/register",
+                data:$("#RegisterForm").serialize(),
+                type:"post",
+                dataType:"text",
+                success:function (data) {
+                    if(data =="success"){
+
+                    }
+                    else{
+
+                    }
+                }
+            })
+        })
+        // 注册时判断用户名
+        $("#reusername").blur(function () {
+            let reusername = $("#reusername").val();
+            if (reusername == '') {
+                $('#errorName').empty(); // 清空resText里面的所有内容
+            }
+            $.ajax({
+                type: "POST",
+                url: "career/user/nameexist",// 判断用户名是否存在的接口地址
+                data: {
+                    //获取文本框的值
+                    username: $("#reusername").val()
+                },
+                dataType: "json",
+                success:function (data) {
+                    console.log("test:"+data)
+                    $('#errorName').empty(); // 清空resText里面的所有内容
+                    $("#errorName").text(data);
+                    //设置获取submit的，设置submit的属性（false禁止提交，true允许提交）
+                    if (data == "已经存在此用户名") {
+                        $("#register").attr("disabled", false);
+                    }
+                    else{
+                        $("#register").attr("disabled", true);
+                    }
+                }
+            });
+        })
+        // 注册时判断两次用户密码是否输入正确
+        $("#repassword").bind("input propertychange", function () {
+            let password = $("#password").val();
+            let repassword = $("#repassword").val();
+            if(repassword !== ''){
+                if (password !== repassword) {
+                    $('#errorPwd').text("两次输入密码不正确"); // 清空resText里面的所有内容
+                    $("#register").attr("disabled", true);
+                } else {
+                    $("#register").attr("disabled", false);
+                    $('#errorPwd').empty();
+                }
+            }else{
+                $('#errorPwd').empty();
+            }
+
+
+        })
+    })
+    // $(".sign_up_btn")
+</script>
+</body>
+</html>

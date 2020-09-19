@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="yunhao.demo5.mapper.BackMapper">
+
+    <resultMap id="job" type="yunhao.demo5.entity.Job">
+        <id column="id" property="id"></id>
+        <result column="title" property="title"></result>
+        <result column="salary" property="salary"/>
+        <result column="place" property="location"/>
+        <result column="experience" property="experience"/>
+        <result column="education" property="education"/>
+        <result column="content" property="detail"/>
+        <result column="company" property="company"/>
+        <result column="kind" property="kind"/>
+    </resultMap>
+
+    <select id="dataGet" resultMap="job">
+        select * from job limit 1000;
+    </select>
+    <select id="dataCut" resultMap="job">
+        select * from job_segmentation;
+    </select>
+
+    <select id="dataPick" resultType="yunhao.demo5.entity.Feature">
+        select * from job_labels_weight;
+    </select>
+</mapper>

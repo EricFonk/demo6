@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>careerUp-数据分词</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/fakeloader.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header"><a class="app-header__logo" href="index.html">careerUp</a>
+      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <!-- Navbar Right Menu-->
+      <!--<ul class="app-nav">
+        &lt;!&ndash;Notification Menu&ndash;&gt;
+        &lt;!&ndash; User Menu&ndash;&gt;
+        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="login.html"><i class="fa fa-sign-out fa-lg"></i>退出登录</a></li>
+          </ul>
+        </li>
+      </ul>-->
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <ul class="app-menu">
+        <li><a class="app-menu__item" href="dataGet.html"><i class="app-menu__icon fa fa-download"></i><span class="app-menu__label">数据获取</span></a></li>
+        <li><a class="app-menu__item" href="dataCut.html"><i class="app-menu__icon fa fa-cut"></i><span class="app-menu__label">数据分词</span></a></li>
+        <li><a class="app-menu__item" href="dataPick.html"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">特征提取</span></a></li>
+        <li><a class="app-menu__item" onclick="update()" id="update" href="#"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">算法更新</span></a></li>
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <div>
+          <h1><i class="fa fa-cut"></i>&nbsp;&nbsp;数据分词</h1>
+        </div>
+        <ul class="app-breadcrumb breadcrumb side">
+          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+          <li class="breadcrumb-item active">数据分词</li>
+        </ul>
+      </div>
+      <div class="fakeloader"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-body">
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered" id="sampleTable">
+                  <thead>
+                  <tr>
+                    <th>职位名称</th>
+                    <th>职位描述</th>
+                  </tr>
+                  </thead>
+                  <!--<tbody id="data_list">
+
+                  </tbody>-->
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/data/jquery-3.3.1.min.js"></script>
+    <script src="js/data/popper.min.js"></script>
+    <script src="js/data/bootstrap.min.js"></script>
+    <script src="js/data/main.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="js/plugins/pace.min.js"></script>
+    <!-- Page specific javascripts-->
+    <!-- Data table plugin-->
+    <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+	 <!-- Page specific javascripts-->
+	  <!-- Data table plugin-->
+	  <script type="text/javascript" defer src="js/plugins/jquery.dataTables.min.js"></script>
+	  <script type="text/javascript" defer src="js/plugins/dataTables.bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+	  <script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	  <script type="text/javascript" src="js/ace-responsive-menu.js"></script>
+	  <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+	  <script type="text/javascript" src="js/snackbar.min.js"></script>
+	  <script type="text/javascript" src="js/simplebar.js"></script>
+	  <script type="text/javascript" src="js/parallax-new.js"></script>
+	  <script type="text/javascript" src="js/parallax.js"></script>
+	  <script type="text/javascript" src="js/scrollto.js"></script>
+	  <script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+	  <script type="text/javascript" src="js/jquery.counterup.js"></script>
+	  <script type="text/javascript" src="js/wow.min.js"></script>
+	  <script type="text/javascript" src="js/progressbar.js"></script>
+	  <script type="text/javascript" src="js/slider.js"></script>
+	  <script type="text/javascript" src="js/timepicker.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/fakeloader.min.js"></script>
+  <!-- Custom script for all pages -->
+    <script type="text/javascript">
+      function update() {
+        alert("算法更新中")
+        $.ajax({
+          type:"get",
+          url:"update",
+		  beforeSend: function(){
+          $("#loader").html("<div class=\"d-flex justify-content-center\">\n" +
+                  "          <div class=\"spinner-border\" role=\"status\">\n" +
+                  "            <span class=\"sr-only\">加载中Loading...</span>\n" +
+                  "          </div>\n" +
+                  "        </div>");
+        },
+          success:function (data) {
+            if (data == "ok"){
+              alert("算法更新完成")
+            }
+          }
+        })
+      }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        var dataCut;
+        $.ajax({
+          type:"POST",
+          url:"career/admin/dataCut",
+          async: false,
+		  beforeSend: function(){
+        },
+          success:function (data) {
+            dataCut = data;
+          }
+        });
+
+        $('#sampleTable').DataTable({
+          /*"processing": true,
+          "serverSide": true,
+          "ajax": {
+            url: "dataCut",
+            columns: [
+              { data: 'title' },
+              { data: 'detail' }
+            ]
+          }*/
+          data: dataCut,
+          columns: [
+            { data: 'title' },
+            { data: 'detail' }
+          ]
+        });
+
+      })
+    </script>
+    <!-- Google analytics script-->
+    <script type="text/javascript">
+        $(".fakeloader").fakeLoader({
+            bgColor:"#007bff",
+            spinner:"spinner3"
+        });
+      if(document.location.hostname == 'pratikborsadiya.in') {
+      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      	ga('create', 'UA-72504830-1', 'auto');
+      	ga('send', 'pageview');
+      }
+      /*对表中的数据渲染*/
+      /*$(function () {
+
+        $.ajax({
+          type:"POST",
+          url:"dataCut",
+          success:function (data) {
+            for (let i=0;i<data.length;i++){
+              $("#data_list").prepend("<tr role=\"row\" class=\"odd\">\n" +
+                      "                        <td>"+ data[i].title +"</td>\n" +
+                      "                        <td>"+data[i].detail+"</td>\n" +
+                      "                      </tr>")
+            }
+          }
+        })
+
+      })*/
+    </script>
+  </body>
+</html>

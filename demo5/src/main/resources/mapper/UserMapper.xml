@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="yunhao.demo5.mapper.UserMapper">
+    <select id="login" parameterType="String" resultType="String">
+      select username from user where username = #{username} and password = #{password}
+    </select>
+    <select id="getbyUsername" parameterType="String" resultType="String">
+      select username from user where username = #{username}
+    </select>
+    <insert id="add" parameterType="yunhao.demo5.entity.User">
+        insert into user(username,password) value(#{user.username},#{user.password})
+    </insert>
+
+</mapper>

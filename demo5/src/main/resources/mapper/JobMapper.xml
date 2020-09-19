@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="yunhao.demo5.mapper.JobMapper">
+    
+    
+    <resultMap id="job" type="yunhao.demo5.entity.Job">
+        <id column="id" property="id"></id>
+        <result column="title" property="title"></result>
+        <result column="salary" property="salary"/>
+        <result column="place" property="location"/>
+        <result column="experience" property="experience"/>
+        <result column="education" property="education"/>
+        <result column="content" property="detail"/>
+        <result column="company" property="company"/>
+        <result column="kind" property="kind"/>
+    </resultMap>
+    <select id="findAll" resultMap="job">
+        select * from job limit 10;
+    </select>
+    <select id="findOne" resultMap="job" parameterType="java.lang.Integer">
+        select * from job where id = #{id};
+    </select>
+    <select id="findJobs" resultMap="job" parameterType="string">
+        select * from job where title like '%${string}%' limit 30
+    </select>
+
+    <select id="getSkills" resultType="yunhao.demo5.entity.Skill">
+        select * from job_labels;
+    </select>
+</mapper>

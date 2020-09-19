@@ -1,0 +1,1398 @@
+[
+  {
+    "skillId": 1,
+    "skillname": "C"
+  },
+  {
+    "skillId": 2,
+    "skillname": "Spring"
+  },
+  {
+    "skillId": 3,
+    "skillname": "mysql"
+  },
+  {
+    "skillId": 4,
+    "skillname": "Oracle"
+  },
+  {
+    "skillId": 5,
+    "skillname": "Linux"
+  },
+  {
+    "skillId": 6,
+    "skillname": "TCP"
+  },
+  {
+    "skillId": 7,
+    "skillname": "HTML"
+  },
+  {
+    "skillId": 8,
+    "skillname": "C#"
+  },
+  {
+    "skillId": 9,
+    "skillname": "Android"
+  },
+  {
+    "skillId": 10,
+    "skillname": "js"
+  },
+  {
+    "skillId": 11,
+    "skillname": "C++"
+  },
+  {
+    "skillId": 12,
+    "skillname": "分布式"
+  },
+  {
+    "skillId": 13,
+    "skillname": "数据库"
+  },
+  {
+    "skillId": 14,
+    "skillname": "设计模式"
+  },
+  {
+    "skillId": 15,
+    "skillname": "Redis"
+  },
+  {
+    "skillId": 16,
+    "skillname": "tomcat"
+  },
+  {
+    "skillId": 17,
+    "skillname": "python"
+  },
+  {
+    "skillId": 18,
+    "skillname": "多线程"
+  },
+  {
+    "skillId": 19,
+    "skillname": "软件开发"
+  },
+  {
+    "skillId": 20,
+    "skillname": "php"
+  },
+  {
+    "skillId": 21,
+    "skillname": "网络编程"
+  },
+  {
+    "skillId": 22,
+    "skillname": "hadoop"
+  },
+  {
+    "skillId": 23,
+    "skillname": "vue.js"
+  },
+  {
+    "skillId": 24,
+    "skillname": "web"
+  },
+  {
+    "skillId": 25,
+    "skillname": "数据结构和算法"
+  },
+  {
+    "skillId": 26,
+    "skillname": ".net"
+  },
+  {
+    "skillId": 27,
+    "skillname": "IO"
+  },
+  {
+    "skillId": 28,
+    "skillname": "Git"
+  },
+  {
+    "skillId": 29,
+    "skillname": "Jquery"
+  },
+  {
+    "skillId": 30,
+    "skillname": "面向对象"
+  },
+  {
+    "skillId": 31,
+    "skillname": "JSP"
+  },
+  {
+    "skillId": 32,
+    "skillname": "Eclipse"
+  },
+  {
+    "skillId": 33,
+    "skillname": "OpenCV"
+  },
+  {
+    "skillId": 34,
+    "skillname": "MVC"
+  },
+  {
+    "skillId": 35,
+    "skillname": "SVN"
+  },
+  {
+    "skillId": 36,
+    "skillname": "J2EE"
+  },
+  {
+    "skillId": 37,
+    "skillname": "XML"
+  },
+  {
+    "skillId": 38,
+    "skillname": "shell"
+  },
+  {
+    "skillId": 39,
+    "skillname": "Maven"
+  },
+  {
+    "skillId": 40,
+    "skillname": "http"
+  },
+  {
+    "skillId": 41,
+    "skillname": "存储过程"
+  },
+  {
+    "skillId": 42,
+    "skillname": "React"
+  },
+  {
+    "skillId": 43,
+    "skillname": "struts"
+  },
+  {
+    "skillId": 44,
+    "skillname": "Photoshop"
+  },
+  {
+    "skillId": 45,
+    "skillname": "SpringBoot"
+  },
+  {
+    "skillId": 46,
+    "skillname": "微服务"
+  },
+  {
+    "skillId": 47,
+    "skillname": "单片机"
+  },
+  {
+    "skillId": 48,
+    "skillname": "SpringMVC"
+  },
+  {
+    "skillId": 49,
+    "skillname": "QT"
+  },
+  {
+    "skillId": 50,
+    "skillname": "UML"
+  },
+  {
+    "skillId": 51,
+    "skillname": "docker"
+  },
+  {
+    "skillId": 52,
+    "skillname": "Objective-C"
+  },
+  {
+    "skillId": 53,
+    "skillname": "Axure"
+  },
+  {
+    "skillId": 54,
+    "skillname": "ARM"
+  },
+  {
+    "skillId": 55,
+    "skillname": "页面架构和布局"
+  },
+  {
+    "skillId": 56,
+    "skillname": "nginx"
+  },
+  {
+    "skillId": 57,
+    "skillname": "CSS"
+  },
+  {
+    "skillId": 58,
+    "skillname": "Ajax"
+  },
+  {
+    "skillId": 59,
+    "skillname": "大数据"
+  },
+  {
+    "skillId": 60,
+    "skillname": "UART"
+  },
+  {
+    "skillId": 61,
+    "skillname": "框架"
+  },
+  {
+    "skillId": 62,
+    "skillname": "SAP"
+  },
+  {
+    "skillId": 63,
+    "skillname": "Matlab"
+  },
+  {
+    "skillId": 64,
+    "skillname": "NoSQL"
+  },
+  {
+    "skillId": 65,
+    "skillname": "SpringCloud"
+  },
+  {
+    "skillId": 66,
+    "skillname": "VS"
+  },
+  {
+    "skillId": 67,
+    "skillname": "OpenGL"
+  },
+  {
+    "skillId": 68,
+    "skillname": "前端"
+  },
+  {
+    "skillId": 69,
+    "skillname": "小程序"
+  },
+  {
+    "skillId": 70,
+    "skillname": "Apache"
+  },
+  {
+    "skillId": 71,
+    "skillname": "MongoDB"
+  },
+  {
+    "skillId": 72,
+    "skillname": "Dubbo"
+  },
+  {
+    "skillId": 73,
+    "skillname": "bootstrap"
+  },
+  {
+    "skillId": 74,
+    "skillname": "SSH"
+  },
+  {
+    "skillId": 75,
+    "skillname": "软件技术文档的编写"
+  },
+  {
+    "skillId": 76,
+    "skillname": "办公软件"
+  },
+  {
+    "skillId": 77,
+    "skillname": "socket"
+  },
+  {
+    "skillId": 78,
+    "skillname": "操作系统"
+  },
+  {
+    "skillId": 79,
+    "skillname": "IAR"
+  },
+  {
+    "skillId": 80,
+    "skillname": "计算机网络"
+  },
+  {
+    "skillId": 81,
+    "skillname": "阅读英文技术文档"
+  },
+  {
+    "skillId": 82,
+    "skillname": "图像处理"
+  },
+  {
+    "skillId": 83,
+    "skillname": "CI"
+  },
+  {
+    "skillId": 84,
+    "skillname": "机器视觉"
+  },
+  {
+    "skillId": 85,
+    "skillname": "机器学习"
+  },
+  {
+    "skillId": 86,
+    "skillname": "缓存技术"
+  },
+  {
+    "skillId": 87,
+    "skillname": "MS"
+  },
+  {
+    "skillId": 88,
+    "skillname": "消息中间间"
+  },
+  {
+    "skillId": 89,
+    "skillname": "VC"
+  },
+  {
+    "skillId": 90,
+    "skillname": "SPI"
+  },
+  {
+    "skillId": 91,
+    "skillname": "一种编程语言"
+  },
+  {
+    "skillId": 92,
+    "skillname": "Unity"
+  },
+  {
+    "skillId": 93,
+    "skillname": "软件测试流程"
+  },
+  {
+    "skillId": 94,
+    "skillname": "memcached"
+  },
+  {
+    "skillId": 95,
+    "skillname": "Xcode"
+  },
+  {
+    "skillId": 96,
+    "skillname": "示波器"
+  },
+  {
+    "skillId": 97,
+    "skillname": "ST"
+  },
+  {
+    "skillId": 98,
+    "skillname": "VB"
+  },
+  {
+    "skillId": 99,
+    "skillname": "常用算法"
+  },
+  {
+    "skillId": 100,
+    "skillname": "MQ"
+  },
+  {
+    "skillId": 101,
+    "skillname": "SOA"
+  },
+  {
+    "skillId": 102,
+    "skillname": "网络协议"
+  },
+  {
+    "skillId": 103,
+    "skillname": "I2C"
+  },
+  {
+    "skillId": 104,
+    "skillname": "sqlserver"
+  },
+  {
+    "skillId": 105,
+    "skillname": "深度学习"
+  },
+  {
+    "skillId": 106,
+    "skillname": "软件工程理论"
+  },
+  {
+    "skillId": 107,
+    "skillname": "word"
+  },
+  {
+    "skillId": 108,
+    "skillname": "正则表达式"
+  },
+  {
+    "skillId": 109,
+    "skillname": "Labview"
+  },
+  {
+    "skillId": 110,
+    "skillname": "嵌入式"
+  },
+  {
+    "skillId": 111,
+    "skillname": "ARM架构"
+  },
+  {
+    "skillId": 112,
+    "skillname": "CAN"
+  },
+  {
+    "skillId": 113,
+    "skillname": "汇编语言"
+  },
+  {
+    "skillId": 114,
+    "skillname": "Swift"
+  },
+  {
+    "skillId": 115,
+    "skillname": "项目管理"
+  },
+  {
+    "skillId": 116,
+    "skillname": "网络通信"
+  },
+  {
+    "skillId": 117,
+    "skillname": "LAMP"
+  },
+  {
+    "skillId": 118,
+    "skillname": "RabbitMQ"
+  },
+  {
+    "skillId": 119,
+    "skillname": "软件架构"
+  },
+  {
+    "skillId": 120,
+    "skillname": "Kafka"
+  },
+  {
+    "skillId": 121,
+    "skillname": "Servlet"
+  },
+  {
+    "skillId": 122,
+    "skillname": "Jenkins"
+  },
+  {
+    "skillId": 123,
+    "skillname": "UI"
+  },
+  {
+    "skillId": 124,
+    "skillname": "JVM"
+  },
+  {
+    "skillId": 125,
+    "skillname": "USB"
+  },
+  {
+    "skillId": 126,
+    "skillname": "lua"
+  },
+  {
+    "skillId": 127,
+    "skillname": "计算机"
+  },
+  {
+    "skillId": 128,
+    "skillname": "AngularJS"
+  },
+  {
+    "skillId": 129,
+    "skillname": "Kubernetes"
+  },
+  {
+    "skillId": 130,
+    "skillname": "DSP"
+  },
+  {
+    "skillId": 131,
+    "skillname": "CA"
+  },
+  {
+    "skillId": 132,
+    "skillname": "一门脚本语言"
+  },
+  {
+    "skillId": 133,
+    "skillname": "浏览器兼容性"
+  },
+  {
+    "skillId": 134,
+    "skillname": "Tensorflow"
+  },
+  {
+    "skillId": 135,
+    "skillname": "前后端分离"
+  },
+  {
+    "skillId": 136,
+    "skillname": "开发工具"
+  },
+  {
+    "skillId": 137,
+    "skillname": "负载均衡"
+  },
+  {
+    "skillId": 138,
+    "skillname": "数字图像处理"
+  },
+  {
+    "skillId": 139,
+    "skillname": "三层架构"
+  },
+  {
+    "skillId": 140,
+    "skillname": "OOP"
+  },
+  {
+    "skillId": 141,
+    "skillname": "Django"
+  },
+  {
+    "skillId": 142,
+    "skillname": "Spark"
+  },
+  {
+    "skillId": 143,
+    "skillname": "WinForm"
+  },
+  {
+    "skillId": 144,
+    "skillname": "GO"
+  },
+  {
+    "skillId": 145,
+    "skillname": "模拟电路"
+  },
+  {
+    "skillId": 146,
+    "skillname": "计算机图形学"
+  },
+  {
+    "skillId": 147,
+    "skillname": "串口通讯"
+  },
+  {
+    "skillId": 148,
+    "skillname": "angular"
+  },
+  {
+    "skillId": 149,
+    "skillname": "ROS"
+  },
+  {
+    "skillId": 150,
+    "skillname": "PC"
+  },
+  {
+    "skillId": 151,
+    "skillname": "STM8"
+  },
+  {
+    "skillId": 152,
+    "skillname": "Visio"
+  },
+  {
+    "skillId": 153,
+    "skillname": "VisualStudio"
+  },
+  {
+    "skillId": 154,
+    "skillname": "网页抓取"
+  },
+  {
+    "skillId": 155,
+    "skillname": "内存管理"
+  },
+  {
+    "skillId": 156,
+    "skillname": "网络架构"
+  },
+  {
+    "skillId": 157,
+    "skillname": "数据分析"
+  },
+  {
+    "skillId": 158,
+    "skillname": "密码学"
+  },
+  {
+    "skillId": 159,
+    "skillname": "以太网"
+  },
+  {
+    "skillId": 160,
+    "skillname": "软件设计"
+  },
+  {
+    "skillId": 161,
+    "skillname": "GIS"
+  },
+  {
+    "skillId": 162,
+    "skillname": "node"
+  },
+  {
+    "skillId": 163,
+    "skillname": "并发编程"
+  },
+  {
+    "skillId": 164,
+    "skillname": "MTK"
+  },
+  {
+    "skillId": 165,
+    "skillname": "网络基础知识"
+  },
+  {
+    "skillId": 166,
+    "skillname": "STM32"
+  },
+  {
+    "skillId": 167,
+    "skillname": "网络设备"
+  },
+  {
+    "skillId": 168,
+    "skillname": "移动网络通信机制"
+  },
+  {
+    "skillId": 169,
+    "skillname": "需求调研"
+  },
+  {
+    "skillId": 170,
+    "skillname": "AWS"
+  },
+  {
+    "skillId": 171,
+    "skillname": "网站"
+  },
+  {
+    "skillId": 172,
+    "skillname": "Framework"
+  },
+  {
+    "skillId": 173,
+    "skillname": "ETL"
+  },
+  {
+    "skillId": 174,
+    "skillname": "数字信号"
+  },
+  {
+    "skillId": 175,
+    "skillname": "OpenStack"
+  },
+  {
+    "skillId": 176,
+    "skillname": "VMware"
+  },
+  {
+    "skillId": 177,
+    "skillname": "PowerDesigner"
+  },
+  {
+    "skillId": 178,
+    "skillname": "ElasticSearch"
+  },
+  {
+    "skillId": 179,
+    "skillname": "软件测试"
+  },
+  {
+    "skillId": 180,
+    "skillname": "物联网技术"
+  },
+  {
+    "skillId": 181,
+    "skillname": "Golang"
+  },
+  {
+    "skillId": 182,
+    "skillname": "Mybatis"
+  },
+  {
+    "skillId": 183,
+    "skillname": "zookeeper"
+  },
+  {
+    "skillId": 184,
+    "skillname": "halcon"
+  },
+  {
+    "skillId": 185,
+    "skillname": "Hibernate"
+  },
+  {
+    "skillId": 186,
+    "skillname": "MES"
+  },
+  {
+    "skillId": 187,
+    "skillname": "keil"
+  },
+  {
+    "skillId": 188,
+    "skillname": "移动端开发"
+  },
+  {
+    "skillId": 189,
+    "skillname": "WCF"
+  },
+  {
+    "skillId": 190,
+    "skillname": "TCPIP协议"
+  },
+  {
+    "skillId": 191,
+    "skillname": "业务抽象数据模型设计"
+  },
+  {
+    "skillId": 192,
+    "skillname": "敏捷开发流程"
+  },
+  {
+    "skillId": 193,
+    "skillname": "iOS"
+  },
+  {
+    "skillId": 194,
+    "skillname": "Slite"
+  },
+  {
+    "skillId": 195,
+    "skillname": "GCC"
+  },
+  {
+    "skillId": 196,
+    "skillname": "FreeRTOS"
+  },
+  {
+    "skillId": 197,
+    "skillname": "响应式设计"
+  },
+  {
+    "skillId": 198,
+    "skillname": "交换机"
+  },
+  {
+    "skillId": 199,
+    "skillname": "JSDK"
+  },
+  {
+    "skillId": 200,
+    "skillname": "底层原理"
+  },
+  {
+    "skillId": 201,
+    "skillname": "RS232"
+  },
+  {
+    "skillId": 202,
+    "skillname": "3D图形学"
+  },
+  {
+    "skillId": 203,
+    "skillname": "AutoCAD"
+  },
+  {
+    "skillId": 204,
+    "skillname": "自然语言处理"
+  },
+  {
+    "skillId": 205,
+    "skillname": "TI"
+  },
+  {
+    "skillId": 206,
+    "skillname": "cocos"
+  },
+  {
+    "skillId": 207,
+    "skillname": "ActiveMQ"
+  },
+  {
+    "skillId": 208,
+    "skillname": "CSR"
+  },
+  {
+    "skillId": 209,
+    "skillname": "SPSS"
+  },
+  {
+    "skillId": 210,
+    "skillname": "Internet基本协议"
+  },
+  {
+    "skillId": 211,
+    "skillname": "Netty"
+  },
+  {
+    "skillId": 212,
+    "skillname": "Ext"
+  },
+  {
+    "skillId": 213,
+    "skillname": "盒模型"
+  },
+  {
+    "skillId": 214,
+    "skillname": "RS485"
+  },
+  {
+    "skillId": 215,
+    "skillname": "ADO.NET"
+  },
+  {
+    "skillId": 216,
+    "skillname": "ffmpeg"
+  },
+  {
+    "skillId": 217,
+    "skillname": "LCD"
+  },
+  {
+    "skillId": 218,
+    "skillname": "Asp.net"
+  },
+  {
+    "skillId": 219,
+    "skillname": "jboss"
+  },
+  {
+    "skillId": 220,
+    "skillname": "EXCEL"
+  },
+  {
+    "skillId": 221,
+    "skillname": "数据仓库"
+  },
+  {
+    "skillId": 222,
+    "skillname": "项目"
+  },
+  {
+    "skillId": 223,
+    "skillname": "Postgresql"
+  },
+  {
+    "skillId": 224,
+    "skillname": "APP"
+  },
+  {
+    "skillId": 225,
+    "skillname": "Sketch"
+  },
+  {
+    "skillId": 226,
+    "skillname": "视图"
+  },
+  {
+    "skillId": 227,
+    "skillname": "云平台"
+  },
+  {
+    "skillId": 228,
+    "skillname": "makefile"
+  },
+  {
+    "skillId": 229,
+    "skillname": "微信平台接口"
+  },
+  {
+    "skillId": 230,
+    "skillname": "laravel"
+  },
+  {
+    "skillId": 231,
+    "skillname": "wifi"
+  },
+  {
+    "skillId": 232,
+    "skillname": "CUDA"
+  },
+  {
+    "skillId": 233,
+    "skillname": "常用的第三方库"
+  },
+  {
+    "skillId": 234,
+    "skillname": "JSON"
+  },
+  {
+    "skillId": 235,
+    "skillname": "人工智能"
+  },
+  {
+    "skillId": 236,
+    "skillname": "容器技术"
+  },
+  {
+    "skillId": 237,
+    "skillname": "UCOS"
+  },
+  {
+    "skillId": 238,
+    "skillname": "Unity3D"
+  },
+  {
+    "skillId": 239,
+    "skillname": "Swoole"
+  },
+  {
+    "skillId": 240,
+    "skillname": "类库"
+  },
+  {
+    "skillId": 241,
+    "skillname": "MCU"
+  },
+  {
+    "skillId": 242,
+    "skillname": "接口"
+  },
+  {
+    "skillId": 243,
+    "skillname": "idea"
+  },
+  {
+    "skillId": 244,
+    "skillname": "T-SQL"
+  },
+  {
+    "skillId": 245,
+    "skillname": "版本管理"
+  },
+  {
+    "skillId": 246,
+    "skillname": "JDK"
+  },
+  {
+    "skillId": 247,
+    "skillname": "VHDL"
+  },
+  {
+    "skillId": 248,
+    "skillname": "企业管理"
+  },
+  {
+    "skillId": 249,
+    "skillname": "浏览器渲染原理"
+  },
+  {
+    "skillId": 250,
+    "skillname": "模块的业务流程"
+  },
+  {
+    "skillId": 251,
+    "skillname": "EF"
+  },
+  {
+    "skillId": 252,
+    "skillname": "ELK"
+  },
+  {
+    "skillId": 253,
+    "skillname": "自动化运维"
+  },
+  {
+    "skillId": 254,
+    "skillname": "质量管理体系"
+  },
+  {
+    "skillId": 255,
+    "skillname": "JDBC"
+  },
+  {
+    "skillId": 256,
+    "skillname": "w3c"
+  },
+  {
+    "skillId": 257,
+    "skillname": "flex"
+  },
+  {
+    "skillId": 258,
+    "skillname": "图表及函数功能"
+  },
+  {
+    "skillId": 259,
+    "skillname": "RPC"
+  },
+  {
+    "skillId": 260,
+    "skillname": "常用的电子元器件"
+  },
+  {
+    "skillId": 261,
+    "skillname": "Kotlin"
+  },
+  {
+    "skillId": 262,
+    "skillname": "NDK"
+  },
+  {
+    "skillId": 263,
+    "skillname": "编写各类技术文档"
+  },
+  {
+    "skillId": 264,
+    "skillname": "微信公众号开发"
+  },
+  {
+    "skillId": 265,
+    "skillname": "openlayers"
+  },
+  {
+    "skillId": 266,
+    "skillname": "WPF"
+  },
+  {
+    "skillId": 267,
+    "skillname": "MVVM"
+  },
+  {
+    "skillId": 268,
+    "skillname": "sass"
+  },
+  {
+    "skillId": 269,
+    "skillname": "用户交互设计"
+  },
+  {
+    "skillId": 270,
+    "skillname": "蓝牙"
+  },
+  {
+    "skillId": 271,
+    "skillname": "Devops"
+  },
+  {
+    "skillId": 272,
+    "skillname": "共识算法或一致性算法"
+  },
+  {
+    "skillId": 273,
+    "skillname": "电力系统"
+  },
+  {
+    "skillId": 274,
+    "skillname": "国内主流机型的特点"
+  },
+  {
+    "skillId": 275,
+    "skillname": "CRM"
+  },
+  {
+    "skillId": 276,
+    "skillname": "Shader"
+  },
+  {
+    "skillId": 277,
+    "skillname": "TypeScript"
+  },
+  {
+    "skillId": 278,
+    "skillname": "Hive"
+  },
+  {
+    "skillId": 279,
+    "skillname": "各种硬件接口"
+  },
+  {
+    "skillId": 280,
+    "skillname": "研发流程"
+  },
+  {
+    "skillId": 281,
+    "skillname": "3D几何"
+  },
+  {
+    "skillId": 282,
+    "skillname": "驱动开发"
+  },
+  {
+    "skillId": 283,
+    "skillname": "视频编解码"
+  },
+  {
+    "skillId": 284,
+    "skillname": "UBOOT"
+  },
+  {
+    "skillId": 285,
+    "skillname": "OS"
+  },
+  {
+    "skillId": 286,
+    "skillname": "JNI"
+  },
+  {
+    "skillId": 287,
+    "skillname": "CCD"
+  },
+  {
+    "skillId": 288,
+    "skillname": "BLE"
+  },
+  {
+    "skillId": 289,
+    "skillname": "ONVIF"
+  },
+  {
+    "skillId": 290,
+    "skillname": "无线网络"
+  },
+  {
+    "skillId": 291,
+    "skillname": "制图软件"
+  },
+  {
+    "skillId": 292,
+    "skillname": "Scrum"
+  },
+  {
+    "skillId": 293,
+    "skillname": "grunt"
+  },
+  {
+    "skillId": 294,
+    "skillname": "监控系统"
+  },
+  {
+    "skillId": 295,
+    "skillname": "Perl"
+  },
+  {
+    "skillId": 296,
+    "skillname": "互联网技术"
+  },
+  {
+    "skillId": 297,
+    "skillname": "集成工具"
+  },
+  {
+    "skillId": 298,
+    "skillname": "K8S"
+  },
+  {
+    "skillId": 299,
+    "skillname": "TP"
+  },
+  {
+    "skillId": 300,
+    "skillname": "Echarts"
+  },
+  {
+    "skillId": 301,
+    "skillname": "数理统计"
+  },
+  {
+    "skillId": 302,
+    "skillname": "MBD"
+  },
+  {
+    "skillId": 303,
+    "skillname": "STL"
+  },
+  {
+    "skillId": 304,
+    "skillname": "ERP"
+  },
+  {
+    "skillId": 305,
+    "skillname": "CMMI"
+  },
+  {
+    "skillId": 306,
+    "skillname": "网络相关设备的配置技术"
+  },
+  {
+    "skillId": 307,
+    "skillname": "ES5"
+  },
+  {
+    "skillId": 308,
+    "skillname": "反爬虫技术"
+  },
+  {
+    "skillId": 309,
+    "skillname": "RESIN"
+  },
+  {
+    "skillId": 310,
+    "skillname": "Hbase"
+  },
+  {
+    "skillId": 311,
+    "skillname": "CEF"
+  },
+  {
+    "skillId": 312,
+    "skillname": "OpenGLES"
+  },
+  {
+    "skillId": 313,
+    "skillname": "Yii"
+  },
+  {
+    "skillId": 314,
+    "skillname": "UE4"
+  },
+  {
+    "skillId": 315,
+    "skillname": "爬虫技术"
+  },
+  {
+    "skillId": 316,
+    "skillname": "3A统计值"
+  },
+  {
+    "skillId": 317,
+    "skillname": "VxWorks"
+  },
+  {
+    "skillId": 318,
+    "skillname": "JUnit"
+  },
+  {
+    "skillId": 319,
+    "skillname": "总线协议"
+  },
+  {
+    "skillId": 320,
+    "skillname": "Dreamweaver"
+  },
+  {
+    "skillId": 321,
+    "skillname": "db2"
+  },
+  {
+    "skillId": 322,
+    "skillname": "加密算法"
+  },
+  {
+    "skillId": 323,
+    "skillname": "UEFI"
+  },
+  {
+    "skillId": 324,
+    "skillname": "DirectX"
+  },
+  {
+    "skillId": 325,
+    "skillname": "组件化开发"
+  },
+  {
+    "skillId": 326,
+    "skillname": "Bitcoin"
+  },
+  {
+    "skillId": 327,
+    "skillname": "进程间通信"
+  },
+  {
+    "skillId": 328,
+    "skillname": "LoadRunner"
+  },
+  {
+    "skillId": 329,
+    "skillname": "gulp"
+  },
+  {
+    "skillId": 330,
+    "skillname": "Glide"
+  },
+  {
+    "skillId": 331,
+    "skillname": "RHEL"
+  },
+  {
+    "skillId": 332,
+    "skillname": "控件开发"
+  },
+  {
+    "skillId": 333,
+    "skillname": "产品发布流程"
+  },
+  {
+    "skillId": 334,
+    "skillname": "PID"
+  },
+  {
+    "skillId": 335,
+    "skillname": "上位机编程"
+  },
+  {
+    "skillId": 336,
+    "skillname": "事务控制及相关技术"
+  },
+  {
+    "skillId": 337,
+    "skillname": "datasheet"
+  },
+  {
+    "skillId": 338,
+    "skillname": "信息安全"
+  },
+  {
+    "skillId": 339,
+    "skillname": "QML"
+  },
+  {
+    "skillId": 340,
+    "skillname": "FPGA"
+  },
+  {
+    "skillId": 341,
+    "skillname": "各类电子测试仪表"
+  },
+  {
+    "skillId": 342,
+    "skillname": "交互设计"
+  },
+  {
+    "skillId": 343,
+    "skillname": "PLC"
+  },
+  {
+    "skillId": 344,
+    "skillname": "restful"
+  },
+  {
+    "skillId": 345,
+    "skillname": "MFC"
+  },
+  {
+    "skillId": 346,
+    "skillname": "虚拟化技术"
+  },
+  {
+    "skillId": 347,
+    "skillname": "npm"
+  },
+  {
+    "skillId": 348,
+    "skillname": "ES6"
+  },
+  {
+    "skillId": 349,
+    "skillname": "lnmp"
+  }
+]
